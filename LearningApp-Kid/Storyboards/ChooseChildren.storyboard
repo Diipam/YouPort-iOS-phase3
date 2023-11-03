@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad7_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Children View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChooseChildrenViewController" id="Y6W-OH-hqX" customClass="ChooseChildrenViewController" customModule="LearningApp_Kid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="744" height="1133"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hF-B5-kfl">
+                                <rect key="frame" x="60" y="93" width="624" height="1020"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Child" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8x-tw-fkx">
+                                <rect key="frame" x="279.5" y="54" width="185.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y8x-tw-fkx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="DVw-9X-sAu"/>
+                            <constraint firstItem="9hF-B5-kfl" firstAttribute="top" secondItem="Y8x-tw-fkx" secondAttribute="bottom" constant="10" id="Fb8-qc-mdo"/>
+                            <constraint firstItem="9hF-B5-kfl" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="KjL-1I-8QZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9hF-B5-kfl" secondAttribute="bottom" id="OtU-PJ-DIb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9hF-B5-kfl" secondAttribute="trailing" id="PTM-4r-1ad">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="9hF-B5-kfl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cus-HP-xDw">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="Y8x-tw-fkx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jwd-KZ-iSB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ChildrensView" destination="9hF-B5-kfl" id="dOM-p7-etM"/>
+                        <outlet property="titleLabel" destination="Y8x-tw-fkx" id="R0x-zK-ZEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.2242990654205" y="77.753779697624196"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

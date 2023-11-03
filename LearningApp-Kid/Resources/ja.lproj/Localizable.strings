@@ -1,0 +1,150 @@
+/* 
+  Localizable.strings
+  LearningApp-Kid
+
+  Created by Anisha Lamichhane on 14/09/2022.
+  Copyright © 2022 SmartSolarNepal. All rights reserved.
+*/
+//
+// MARK: - TopView -
+"Start" = "はじめる";
+//
+// MARK: - OnboardingScreen -
+"Let’s Start!" = "それでは始めましょう！";
+"Set a password" = "パスワードを設定する";
+
+// MARK: - ParentRegistration -
+//
+"Set Parent Password" = "親パスワードの設定";
+"Password" = "パスワード入力";
+"Confirm Password" = "パスワード再入力";
+"*Please set a 4-digit password." = "*４桁のパスワードを設定してください。";
+"*If you forget your password, you will need to reinstall the app and start from the initial settings." = "*パスワードを忘れた場合、アプリを再インストールしていただき初期設定から行なっていただく必要があります。";
+//
+// MARK: - ChildRegistration -
+
+"Child Information" = "お子さま情報登録";
+"Select Icon"  = "アイコンを選択";
+"Gender"  = "性別";
+"Select Gender" = "性別を選択";
+"Nickname"  = "ニックネーム";
+"Date of Birth"  = "生年月日";
+"Age"  = "年齢";
+
+"male" = "男の子";
+"female" = "女の子";
+"other" = "どちらでもない";
+
+//for ActionSheet
+"Take a photo" = "カメラで撮影";
+"Choose from library" = "写真";
+"Use Avatar" = "アバターを使用";
+"Select Age" = "";
+
+//for updating ChildRegistration Page
+"Delete" = "削除";
+
+"Delete Child" = "ユーザーを削除";
+"Child Deletion Successful" = "子の削除に成功しました";
+"Child Updated successfully" = "子は正常に更新されました。";
+"Child Created Successfully" = "子が正常に作成されました。";
+"Settings saved Successfully." = "設定が正常に保存されました。";
+
+"Something went wrong.Please check your internet connection" = "エラーが発生しました。インターネット接続を確認してください";
+
+// MARK: - Birthday Text -
+"Happy \n Birthday!" = "お誕生日おめでとう\nございます！";
+"Due to the change of your child’s age, the difficulty level of the questions has been changed." = "お子さまの年齢変更に伴い、問題の難易度が変更されました。";
+
+// MARK: - Problem Settings -
+"Quiz Setting"  = "問題設定";
+
+"E" = "低";
+"M" = "中";
+"D" = "高";
+
+"mins" = "分";
+
+"Frequency" = "問題出題頻度";
+"Time" = "解答時間";
+"Answer Time" = "解答時間";
+"Difficulty" = "問題難易度";
+"Quota" = "正答ノルマ";
+
+"Questions will appear at specified time intervals during the viewing of the video. You can choose in 5-minute increments between 5 and 60 minutes." = "動画の視聴中、指定した時間ごとに問題が出題されます。５分～60分の間の５分単位で選択できます。";
+
+"When the answer time has expired, the system will move on to the next question. The answer time can be selected in 1-minute increments from 1 to 5 minutes." = "【解答時間】を過ぎると、次の問題へ移行します。【解答時間】は、1分～5分の間の1分単位で選択できます。";
+
+"The difficulty level of the questions is automatically set according to the registered age.[★]0 - 3 years old, [★★] 4 - 6 years old, [★★★] 7 years old and older.You can also change the difficulty level according to your child's stage of growth." = "問題の難易度は、登録した年齢に合わせて自動設定しております。【★】～3歳、【★★】4歳～6歳【★★★】7歳～お子様の成長段階に合わせて難易度を変更する事もできます。";
+
+"When the designated number of questions are answered correctly, the user will be returned to watching the video.The quota of correct answers can be selected for each question from 1 to 5." = "指定した問題数を正答すると動画視聴に戻ります。【正答ノルマ】は、1問～5問の1問ごとに選択できます。";
+
+
+
+// MARK: - ChildSelection -
+
+"Select Your Child" = "お子様選択";
+"Add Child User" = "お子さまを追加";
+
+// MARK: - ParentPassword -
+"Enter Your Password" = "パスワードを入力してください";
+"The password is incorrect" = "パスワードが正しくありません。";
+
+// MARK: - Settings -
+"Play Quiz" = "クイズで遊ぶ";
+
+//Switch User
+"Change User" = "ユーザー切り替え";
+
+//Change User Info
+"Change Child Info" = "お子さま情報変更";
+
+//license information
+"License" = "ライセンス情報";
+
+//terms of service
+"Terms of Use" = "利用規約";
+
+// MARK: - General Buttons for Game -
+"Apply" = "確定する";
+"Cancel" = "Cancel";
+
+// MARK: - Api Error -
+"There was a problem connecting to the server. Please check your internet connection and try again." = "サーバーに接続できませんでした。インターネット接続を確認して、もう一度お試しください。";
+"Incorrect Password." = "パスワードが間違っています。";
+
+// MARK: - Content Selection -
+"Contents" = "コンテンツ選択";
+
+
+//// MARK: Terms Of Service
+"Agree" = "同意する";
+
+// MARK: Quiz Screens
+
+//Pattern A
+"Continue" = "継続する";
+
+//Pattern B001
+"Problem" = "もん";
+"Remaining" =  "のこり";
+
+"OK" = "OK";
+"Reset" = "やりなおす";
+"Skip" = "スキップ";
+"Congratulations!" = "おめでとう！";
+
+"Please try again" = "もう一度お試しください";
+"Dismiss" = "解散";
+"Your answer field is empty" = "回答欄が空です。";
+
+
+//pattern B002
+"Something went wrong." = "エラーが発生しました。";
+
+
+
+
+
+
+

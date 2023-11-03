@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LearningApp-Kid
+
+  Created by Anisha Lamichhane on 14/09/2022.
+  Copyright © 2022 SmartSolarNepal. All rights reserved.
+*/
+
+"男の子" = "male";
+"女の子" = "female";
+"どちらでもない" = "other";

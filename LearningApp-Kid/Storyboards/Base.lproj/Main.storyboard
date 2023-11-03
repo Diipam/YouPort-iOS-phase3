@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="LearningApp_Kid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6e-CN-VmS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="640"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNV-J4-hd8">
+                                <rect key="frame" x="5" y="573" width="50" height="50"/>
+                                <color key="backgroundColor" name="submitDefaultRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="C78-ZP-U2P">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="50" id="fPi-oa-ifu">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playQuizButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rn2-d0-4AT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fbC-3O-Tcq">
+                                <rect key="frame" x="0.0" y="643" width="375" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="D7v-XQ-J8v"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZNV-J4-hd8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="4NR-Ya-98E"/>
+                            <constraint firstItem="fbC-3O-Tcq" firstAttribute="top" secondItem="r6e-CN-VmS" secondAttribute="bottom" constant="3" id="OmM-NZ-V8G"/>
+                            <constraint firstItem="r6e-CN-VmS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VHa-ra-cVp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r6e-CN-VmS" secondAttribute="trailing" id="ZOB-dE-awG"/>
+                            <constraint firstItem="fbC-3O-Tcq" firstAttribute="top" secondItem="ZNV-J4-hd8" secondAttribute="bottom" constant="20" id="gef-dH-7ya"/>
+                            <constraint firstItem="r6e-CN-VmS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="liF-hY-tLD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fbC-3O-Tcq" secondAttribute="bottom" constant="-1" id="pvB-5p-ttV"/>
+                            <constraint firstItem="fbC-3O-Tcq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vzH-mb-hdY"/>
+                            <constraint firstItem="fbC-3O-Tcq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wd8-nn-Lv5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="r6e-CN-VmS" id="Mxp-Fh-mE6"/>
+                        <outlet property="playQuizButton" destination="ZNV-J4-hd8" id="fmW-Tb-i3F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2440.4651162790697" y="-203.43347639484981"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="429" height="95"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <namedColor name="submitDefaultRed">
+            <color red="0.80000001192092896" green="0.0040000001899898052" blue="0.078000001609325409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

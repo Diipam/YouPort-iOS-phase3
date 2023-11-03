@@ -1,0 +1,44 @@
+PODS:
+  - Cosmos (23.0.0)
+  - DropDown (2.3.13)
+  - IQKeyboardManagerSwift (6.5.11)
+  - Kingfisher (7.6.2)
+  - ProgressHUD (13.6.2)
+  - SideMenu (6.5.0)
+  - SnapKit (5.6.0)
+  - SwiftGen (6.6.2)
+
+DEPENDENCIES:
+  - Cosmos
+  - DropDown
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - ProgressHUD
+  - SideMenu
+  - SnapKit
+  - SwiftGen
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - DropDown
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - ProgressHUD
+    - SideMenu
+    - SnapKit
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  ProgressHUD: 355915c8f033e626788fa9b0d99d06e8691595ab
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+
+PODFILE CHECKSUM: 81538b31748e4aa06cd24d04aedcb6857df0d59e
+
+COCOAPODS: 1.13.0

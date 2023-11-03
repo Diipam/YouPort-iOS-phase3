@@ -1,0 +1,83 @@
+name: Cosmos, nameSpecified: 
+body: The MIT License
+
+Cop…
+version: 23.0.0
+
+name: Cosmos, nameSpecified: 
+body: The MIT License
+
+Cop…
+version: 23.0.0
+
+name: DropDown, nameSpecified: 
+body: The MIT License (MIT…
+version: 2.3.13
+
+name: DropDown, nameSpecified: 
+body: The MIT License (MIT…
+version: 2.3.13
+
+name: IQKeyboardManagerSwift, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 6.5.11
+
+name: IQKeyboardManagerSwift, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 6.5.11
+
+name: Kingfisher, nameSpecified: 
+body: The MIT License (MIT…
+version: 7.6.2
+
+name: Kingfisher, nameSpecified: 
+body: The MIT License (MIT…
+version: 7.6.2
+
+name: ProgressHUD, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 13.6.2
+
+name: ProgressHUD, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 13.6.2
+
+name: SideMenu, nameSpecified: 
+body: Copyright (c) 2015 J…
+version: 6.5.0
+
+name: SideMenu, nameSpecified: 
+body: Copyright (c) 2015 J…
+version: 6.5.0
+
+name: SnapKit, nameSpecified: 
+body: Copyright (c) 2011-P…
+version: 5.6.0
+
+name: SnapKit, nameSpecified: 
+body: Copyright (c) 2011-P…
+version: 5.6.0
+
+name: SwiftGen, nameSpecified: 
+body: MIT Licence
+
+Copyrig…
+version: 6.6.2
+
+name: SwiftGen, nameSpecified: 
+body: MIT Licence
+
+Copyrig…
+version: 6.6.2
+
+add-version-numbers: false
+
+LicensePlist Version: 3.24.9

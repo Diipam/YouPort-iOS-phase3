@@ -1,0 +1,6 @@
+ib:
+  inputs: LearningApp-Kid
+  filter: .+\.storyboard$
+  outputs:
+    - templateName: scenes-swift5
+      output: LearningApp-Kid/SwiftGen/Storyboard Scenes.swift

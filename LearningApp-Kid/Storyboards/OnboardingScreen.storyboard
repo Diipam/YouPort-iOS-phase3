@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="LearningApp_Kid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="Tb3-1f-cIo">
+                                <rect key="frame" x="75" y="492" width="170.5" height="26"/>
+                                <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.80000001190000003" green="0.0039215688589999999" blue="0.078431375319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="pageControlPressed:" destination="Y6W-OH-hqX" eventType="valueChanged" id="nyi-Je-fnf"/>
+                                </connections>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbD-f0-74f">
+                                <rect key="frame" x="82" y="391.5" width="156.5" height="40.5"/>
+                                <color key="tintColor" name="submitDefaultRed"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Set a password" cornerStyle="medium">
+                                    <directionalEdgeInsets key="contentInsets" top="10" leading="20" bottom="10" trailing="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="submitDefaultRed"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="passwordButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TrN-O9-oOE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s Start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHG-gf-Bx2">
+                                <rect key="frame" x="96.5" y="138" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRw-6F-tS7">
+                                <rect key="frame" x="139.5" y="50" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46O-KM-FyA">
+                                <rect key="frame" x="20" y="85.5" width="280" height="27.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="92O-zS-fG4">
+                                <rect key="frame" x="20" y="133" width="280" height="339"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="92O-zS-fG4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="4Gc-mc-Zd3"/>
+                            <constraint firstItem="uHG-gf-Bx2" firstAttribute="top" secondItem="46O-KM-FyA" secondAttribute="bottom" constant="25" id="8y2-bW-Uok"/>
+                            <constraint firstItem="Tb3-1f-cIo" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="CeZ-lG-RzP"/>
+                            <constraint firstItem="uHG-gf-Bx2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="KsT-zf-sQ2"/>
+                            <constraint firstItem="TRw-6F-tS7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="LsN-1g-mz1"/>
+                            <constraint firstItem="TRw-6F-tS7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="PGU-7D-5hE"/>
+                            <constraint firstItem="46O-KM-FyA" firstAttribute="top" secondItem="TRw-6F-tS7" secondAttribute="bottom" constant="15" id="YAc-jT-BYi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="92O-zS-fG4" secondAttribute="trailing" constant="20" id="Zm8-aT-qz9"/>
+                            <constraint firstItem="46O-KM-FyA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cGc-ep-Osj"/>
+                            <constraint firstItem="46O-KM-FyA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gB0-C1-7tA"/>
+                            <constraint firstItem="HbD-f0-74f" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hCK-5d-gon"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Tb3-1f-cIo" secondAttribute="bottom" constant="50" id="jsZ-wS-dax"/>
+                            <constraint firstItem="Tb3-1f-cIo" firstAttribute="top" secondItem="HbD-f0-74f" secondAttribute="bottom" constant="60" id="sEe-Et-N4B"/>
+                            <constraint firstItem="92O-zS-fG4" firstAttribute="top" secondItem="46O-KM-FyA" secondAttribute="bottom" constant="20" id="tZO-Wb-95P"/>
+                            <constraint firstItem="Tb3-1f-cIo" firstAttribute="top" secondItem="92O-zS-fG4" secondAttribute="bottom" constant="20" id="z40-xw-8p3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="46O-KM-FyA" id="2BF-se-82Z"/>
+                        <outlet property="onboardingImage" destination="92O-zS-fG4" id="JU8-xE-fAR"/>
+                        <outlet property="pageControl" destination="Tb3-1f-cIo" id="CxR-73-0e6"/>
+                        <outlet property="screenLabel" destination="TRw-6F-tS7" id="3kr-1E-6S0"/>
+                        <outlet property="setPasswordButton" destination="HbD-f0-74f" id="auE-1J-auh"/>
+                        <outlet property="startedLabel" destination="uHG-gf-Bx2" id="efs-Y9-aVH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.25" y="-171.12676056338029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="submitDefaultRed">
+            <color red="0.80000001192092896" green="0.0040000001899898052" blue="0.078000001609325409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
