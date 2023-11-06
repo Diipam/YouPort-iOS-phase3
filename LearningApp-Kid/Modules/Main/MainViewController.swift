@@ -17,13 +17,13 @@ class MainViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, 
     static let identifier = String(describing: MainViewController.self)
     var childDetails: AllChilds? = nil
     var allQuestions: AllQuestionResponse? = nil
-    
+
     var timer: Timer?
     var webView: WKWebView?
-    
+
     @IBOutlet weak var playQuizButton: UIButton!
     @IBOutlet weak var contentView: UIView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         loadViewIfNeeded()
@@ -74,7 +74,7 @@ class MainViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, 
 
         webView?.translatesAutoresizingMaskIntoConstraints = false
     }
-    
+
     public func loadYoutube() {
         DispatchQueue.global(qos: .userInitiated).async {
             let tiktokUrl = URL(string: "https://www.tiktok.com/")
@@ -98,7 +98,7 @@ class MainViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, 
             }
         }
     }
-    
+
     @objc func swippedLeft(_ gesture: UISwipeGestureRecognizer) {
         if gesture.direction == .left {
             DispatchQueue.main.async { [weak self] in
@@ -126,7 +126,29 @@ class MainViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, 
         addConstraints()
         playQuizButton.cornerRadius = playQuizButton.height / 2
     }
+
+    override func pressedBackButton() {
+        //        print("I am handsome")
+        if let webView = self.webView, webView.canGoBack {
+            webView.goBack()
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
     
+
+
+
+
+//        if let viewControllers = navigationController?.viewControllers, viewControllers.count >= 3 {
+//            if let _ = viewControllers[viewControllers.count - 2] as? ParentPasswordInputViewController  {
+//                navigationController?.popToViewController(viewControllers[viewControllers.count - 3], animated: true )
+//            } else {
+//                self.navigationController?.popViewController(animated: true)
+//            }
+//        }
+
+
     func addConstraints() {
         var constraints = [NSLayoutConstraint]()
         guard let webView = webView else { return }

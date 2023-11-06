@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+typealias EmptyClosure = () -> ()
+
 extension UIViewController {
     func setUpNavigationBar(isBackButtonHidden: Bool, isLogoHidden: Bool, isSettingIconHidden: Bool) {
         if !isBackButtonHidden {
@@ -42,7 +44,9 @@ extension UIViewController {
             self.navigationItem.rightBarButtonItem = nil
         }
     }
-    
+
+
+
     @objc func pressedBackButton() {
         self.navigationController?.popViewController(animated: true)
     }

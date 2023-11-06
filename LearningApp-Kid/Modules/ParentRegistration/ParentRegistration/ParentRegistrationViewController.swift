@@ -143,6 +143,7 @@ extension ParentRegistrationViewController: UITextFieldDelegate {
 extension ParentRegistrationViewController {
     @objc private func DetermineButtonPressed() {
         passwordTextField.resignFirstResponder()
+//        view.endEditing(true)
         confirmPasswordTextField.resignFirstResponder()
         
         guard let password = passwordTextField.text, let confirmedPassword = confirmPasswordTextField.text, !password.trimmingCharacters(in: .whitespaces).isEmpty ,!confirmedPassword.trimmingCharacters(in: .whitespaces).isEmpty, password.count == 4, confirmedPassword.count == 4, password == confirmedPassword else {
